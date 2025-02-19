@@ -4,6 +4,7 @@ from http.server import SimpleHTTPRequestHandler, HTTPServer
 import urllib.parse
 import json
 import sys
+import shlex
 
 def list_wifi_networks():
     result = subprocess.run(['nmcli', '-t', '-f', 'SSID,SECURITY,SIGNAL', 'dev', 'wifi'], capture_output=True, text=True)
