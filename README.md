@@ -8,6 +8,9 @@ fnWifi 是一个基于GitHub Copilot的AI Code能力，为飞牛OS开发的简�
 - 显示 WiFi 网络的 SSID、安全性和信号强度
 - 连接到 WiFi 网络
 - 断开 WiFi 网络
+- 
+![界面预览](https://tu.tryto.live:808/i/2025/02/20/193607.png)
+
 
 ## 安装
 

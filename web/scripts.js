@@ -58,6 +58,14 @@ document.addEventListener('DOMContentLoaded', function() {
         dialog.style.display = 'flex';
         const connectBtn = document.getElementById('connect-btn');
         connectBtn.onclick = () => connectToWifi(ssid);
+
+        // 监听输入框的回车键事件
+        const passwordInput = document.getElementById('wifi-password');
+        passwordInput.onkeydown = (event) => {
+            if (event.key === 'Enter') {
+                connectBtn.click();
+            }
+        };
     }
 
     function closeDialog() {

@@ -57,6 +57,16 @@ class CustomHandler(SimpleHTTPRequestHandler):
                 self.path = self.path
             else:
                 self.path = '/web' + self.path
+
+            # 验证路径是否在允许的目录中
+            requested_path = os.path.normpath(self.path)
+            web_dir = os.path.normpath('/web')
+            if not os.path.commonprefix([requested_path, web_dir]) == web_dir:
+                self.send_response(403)
+                self.end_headers()
+                self.wfile.write(b'Forbidden')
+                return
+
             return SimpleHTTPRequestHandler.do_GET(self)
 
     def do_POST(self):
