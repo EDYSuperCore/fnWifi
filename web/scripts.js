@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         const signalCell = row.insertCell(2);
                         const actionCell = row.insertCell(3);
 
-                        ssidCell.textContent = ssid;
+                        ssidCell.textContent = ssid || '--'; // 如果SSID为空，则显示为‘--’
                         if (ssid === currentWifi) {
                             const tag = document.createElement('span');
                             tag.className = 'tag';
