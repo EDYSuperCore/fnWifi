@@ -1,6 +1,6 @@
 # fnWifi
 
-fnWifi 是一个简单的应用程序，用于列出可用的 WiFi 网络，并允许用户连接或断开 WiFi 网络。
+fnWifi 是一个基于GitHub Copilot的AI Code能力，为飞牛OS开发的简单的应用程序，用于列出可用的 WiFi 网络，并允许用户连接或断开 WiFi 网络。
 
 ## 功能
 
